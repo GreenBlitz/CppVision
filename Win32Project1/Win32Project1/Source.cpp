@@ -1,6 +1,6 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
-//this is a comment
+
 using namespace cv;
 using namespace std;
 
