@@ -6,7 +6,7 @@ VisionImage::VisionImage()
 {
 }
 
-//
+
 
 VisionImage::~VisionImage()
 {
