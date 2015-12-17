@@ -1,2 +1,2 @@
 # CppVision
-Cpp Version of th Vision for the Jetson
+Cpp Version of the Vision for the Jetson
