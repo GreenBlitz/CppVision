@@ -5,7 +5,7 @@
 
 VisionImage::VisionImage(Mat image)
 {
-	Construct(image, Mat(image.rows, image.cols, CV_32S));
+	Construct(image, Mat(image.size, CV_32S));
 }
 
 VisionImage::VisionImage(Mat image, Mat depth)
@@ -55,7 +55,7 @@ void VisionImage::Filter(int filter, int from[], int to[]) {
 	} else if (filter == DEPTH_FILTER){
 		min = Scalar(from[0]);
 		max = Scalar(to[0]);
-		source = Mat(image.size(), CV_8U);
+		source = Mat(image.size, CV_8U);
 		depth.copyTo(source, image);
 	}
 	inRange(source, min, max, image);
