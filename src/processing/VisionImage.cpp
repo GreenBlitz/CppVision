@@ -55,7 +55,8 @@ void VisionImage::Filter(int filter, int from[], int to[]) {
 	} else if (filter == DEPTH_FILTER){
 		min = Scalar(from[0]);
 		max = Scalar(to[0]);
-		source = depth;
+		source = Mat(image.size(), CV_8U);
+		depth.copyTo(source, image);
 	}
 	inRange(source, min, max, image);
 
