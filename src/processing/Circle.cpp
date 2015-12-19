@@ -59,7 +59,7 @@ vector<Point> Circle::FindCenters(VisionImage img){
 		int ctrArea = contourArea(polly);
 		//The area of a circle is pi times the radius squared.
 		float area = 3.141f * radius * radius;
-		if (area * 1.2f >= ctrArea && area * 0.85f <= ctrArea){
+		if (area >= ctrArea && area * 0.85f <= ctrArea){
 			if (minRadius <= radius && (maxRadius==-1 || maxRadius >= radius) ){
 				foundCenters[count] = center;
 				count++;
