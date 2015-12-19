@@ -1,9 +1,3 @@
-/*
- * Circle.h
- *
- *  Created on: Dec 18, 2015
- *      Author: guyde
- */
 
 #ifndef CIRCLE_GB_H
 #define CIRCLE_GB_H
