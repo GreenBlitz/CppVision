@@ -18,7 +18,7 @@ Download Eclipse CDT from: https://eclipse.org/cdt/ for linux, and download a jd
 
 `$ sudo apt-get install default-jdk`
 
-When you finish downloading eclipse, extract the tar.gz file and open the program's executable which is located at <Extracted_Folder>/eclipse/eclipse.
+When you finish downloading eclipse, extract the tar.gz file and open the program's executable which is located at `<Extracted_Folder>/eclipse/eclipse`.
 
 And you are done, you have successfully installed eclipse CDT.
 
@@ -26,15 +26,15 @@ And you are done, you have successfully installed eclipse CDT.
 ### Building OpenCV
 **If you have already compiled and built opencv's sources, skip this part of the tutorial.**
 
-Download opencv for Linux from http://opencv.org/
+Download OpenCV for Linux from http://opencv.org/
 Extract the downloaded file and run the following commands:
 
 `$ sudo apt-get install build-essential` (If you have have already installed the c++ compiler, don't run this command)
 
 `$ sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev`
 
-Extract OpenCV's sources into a folder which I will refer to as <opencv_src>.
-Make a folder in <opencv_src>/opencv and call it "release".
+Extract OpenCV's sources into a folder which I will refer to as `<opencv_src>`.
+Make a folder in `<opencv_src>/opencv` and call it "release".
 Run the following commands:
 
 `$ cd <opencv_src>/opencv/release`
@@ -51,7 +51,7 @@ After that, you are done with building opencv.
 
 Click the "Download Zip" button in the upper right corner of the github view.
 Open the downloaded "CppVision-master.zip" and extract the "CppVision-master" folder into a folder which I will refer to as 
-<downloaded_src>.
+`<downloaded_src>`.
 You have successfully downloaded the source files.
 
 
@@ -60,7 +60,7 @@ You have successfully downloaded the source files.
 After choosing a workspace, create a new C++ project by right-clicking the Project-Explorer and selecting 'New...'
 Choose a name to the project and as for the compiler, choose the Linux GCC compiler and an empty project.
 After creating the project create a new source folder, and name it "src".
-Open <downloaded_src>/src and drag it's contents to the "src" folder in eclipse.
+Open `<downloaded_src>/src` and drag it's contents to the "src" folder in eclipse.
 A prompt will show up, in which you want to check the "copy files" option.
 Now right click on the project and select properties.
 
@@ -78,8 +78,8 @@ Run the project and you should see in the console: `Usage: display_image ImageTo
 
 Now right click the project and click the "Run as" option and in it select the "Run configurations..." option.
 Right click the already existing configuration and choose the duplicate option.
-Now change the configuration name to whatever you desire, I am going to refer to it as <run_cfg>.
-In <run_cfg> go to the "Arguments" tab and add `<downloaded_src>/sample3.jpg`
+Now change the configuration name to whatever you desire, I am going to refer to it as `<run_cfg>`.
+In `<run_cfg>` go to the "Arguments" tab and add `<downloaded_src>/sample3.jpg`
 
 Click on "Apply" and on "Run".
 
