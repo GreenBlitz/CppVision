@@ -61,7 +61,7 @@ vector<Point> Rectangle::FindCenters(VisionImage img){
 		rectangle = boundingRect(polly);
 		int area = rectangle.area();
 		int ctrArea = contourArea(polly);
-		if (area * 1.2f >= ctrArea && area * 0.85f <= ctrArea){
+		if (area >= ctrArea && area * 0.85f <= ctrArea){
 			float ratio = (float)rectangle.width / (float)rectangle.height;
 			if ( ratio >= aspectRatio * 0.85f && ratio <= aspectRatio * 1.2f){
 				if (rectangle.width >= minWidth && ( maxWidth==-1 || maxWidth >= rectangle.width)){
