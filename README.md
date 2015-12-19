@@ -79,7 +79,7 @@ Run the project and you should see in the console: `Usage: display_image ImageTo
 Now right click the project and click the "Run as" option and in it select the "Run configurations..." option.
 Right click the already existing configuration and choose the duplicate option.
 Now change the configuration name to whatever you desire, I am going to refer to it as <run_cfg>.
-In <run_cfg> go to the "Arguments" tab and add Usage: `<downloaded_src>/sample3.jpg`
+In <run_cfg> go to the "Arguments" tab and add `<downloaded_src>/sample3.jpg`
 
 Click on "Apply" and on "Run".
 
