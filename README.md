@@ -14,9 +14,9 @@ After you've managed to setup the Ubunutu enviorment, continue reading the tutor
 
 Download Eclipse CDT from: https://eclipse.org/cdt/ for linux, and download a jdk by running the following commands in the terminal: 
 
-`$ sudo apt-get install sudo apt-get install default-jre`
+`$ sudo apt-get install default-jre`
 
-`$ sudo apt-get install sudo apt-get install default-jdk`
+`$ sudo apt-get install default-jdk`
 
 When you finish downloading eclipse, extract the tar.gz file and open the program's executable which is located at <Extracted_Folder>/eclipse/eclipse.
 
